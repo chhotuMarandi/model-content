@@ -35,13 +35,16 @@ h1 {
  box-sizing: border-box;
  width: 1000px;
  height: 620px;
- background-color: blue;
+ background-color: white;
  position: absolute;
- visibility: hidden;
 }
 
 .show-focus {
  visibility: visible;
+}
+
+.hide-focus {
+ visibility: hidden;
 }
 
 .model-focus i {
