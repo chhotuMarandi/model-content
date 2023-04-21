@@ -11,9 +11,6 @@
  justify-content: center;
  align-items: center;
  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
- /* background: url(https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
- background-size: cover;
- background-repeat: no-repeat; */
 }
 
 .model-content {
@@ -25,31 +22,32 @@
  align-items: center;
  position: relative;
  background-color: red;
+ cursor: pointer;
 }
 
 h1 {
  font-size: 3rem;
 }
 
-.model-focus {
+.open-model {
  box-sizing: border-box;
  width: 1000px;
  height: 620px;
  background-color: white;
  position: absolute;
-}
-
-.show-focus {
- visibility: visible;
-}
-
-.hide-focus {
  visibility: hidden;
+ z-index: -10;
 }
 
-.model-focus i {
+.showContent {
+ visibility: visible;
+ z-index: 10;
+}
+
+.open-model i {
  font-size: 3rem;
  right: 0;
  position: absolute;
  margin: 1rem;
+ cursor: pointer;
 }
