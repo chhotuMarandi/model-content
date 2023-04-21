@@ -10,9 +10,10 @@
  display: flex;
  justify-content: center;
  align-items: center;
- background: url(https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+ background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+ /* background: url(https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
  background-size: cover;
- background-repeat: no-repeat;
+ background-repeat: no-repeat; */
 }
 
 .model-content {
@@ -31,9 +32,21 @@ h1 {
 }
 
 .model-focus {
- width: 9100px;
- height: 720px;
+ box-sizing: border-box;
+ width: 1000px;
+ height: 620px;
  background-color: blue;
  position: absolute;
- /* visibility: hidden; */
+ visibility: hidden;
+}
+
+.show-focus {
+ visibility: visible;
+}
+
+.model-focus i {
+ font-size: 3rem;
+ right: 0;
+ position: absolute;
+ margin: 1rem;
 }
